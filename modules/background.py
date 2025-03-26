@@ -19,7 +19,7 @@ class VideoBackgroundGenerator:
         temp_folder = os.getenv("TEMP_FOLDER_PATH")
         timestamp_ms = int(time.time() * 1000)
         os.makedirs(temp_folder, exist_ok=True)
-        page = random.randint(1, 5)  # Random page for variety
+        page = 1  # Random page for variety
         orientation = "" if self.orientation is None else f"&orientation={self.orientation}"
         url = f"https://api.pexels.com/videos/search?query={self.query}&per_page=1&page={page}&size=large{orientation}"  # Get only 1 video
         headers = {"Authorization": api_key}

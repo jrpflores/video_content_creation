@@ -169,10 +169,14 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
-
+token.*
+credentials.*
 credentials.json
 .env
 path/
 temp/
 uploads/
 modules/__pycache__
+cron.logs
+reels_*
+cron.sh
