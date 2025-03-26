@@ -1,4 +1,4 @@
-# Requirement
+# Requirements
 - python version 3.11+
 - google enabled apis
     - text to speech for converting generated text from ai
